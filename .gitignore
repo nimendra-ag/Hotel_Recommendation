@@ -1,0 +1,4 @@
+venv/
+mlruns/
+logs/
+Hotel_Recommendation.egg-info/
