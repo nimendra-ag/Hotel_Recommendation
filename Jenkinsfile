@@ -5,7 +5,7 @@ pipeline{
         stage("Cloning Github repo to Jenkins"){
             steps{
                 script{
-                    echo 'Cloning Github repo to Jenkins test 1...'
+                    echo 'Cloning Github repo to Jenkins...'
                     checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/nimendra-ag/Hotel_Recommendation.git']])
                 }
             }
